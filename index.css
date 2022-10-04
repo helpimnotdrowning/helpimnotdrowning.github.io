@@ -1,0 +1,85 @@
+:root {
+    color-scheme: dark;
+    --corner-radius: 15px;
+    --font-family: "Segoe UI",system-ui,-apple-system,"Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Segoe UI Emoji","Segoe UI Symbol","Apple Color Emoji","Noto Color Emoji";
+    --background-color: #202020;
+    --shadow-color: #1112137F;
+    --text-color: #fff;
+    --subtext-color: #979797;
+}
+
+html {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+}
+
+#pfp {
+    border-radius: var(--corner-radius);
+    filter: drop-shadow(0px 20px 10px var(--shadow-color));
+}
+
+#headertext {
+    margin-top: 10px;
+    margin: -50px;
+}
+
+#username {
+    font-size: 4em;
+    margin-bottom: -20px;
+}
+
+#splash {
+    color: var(--subtext-color);
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%; /* setting width offsets it for some reason, so shift it back */
+    margin-top: 25px;
+    
+    /* enable this to mimic the minecraft main menu splash animation */
+    /*
+    color: yellow !important;
+    margin-left: 390px;
+    rotate: -23.5deg;
+    animation-duration: .25s;
+    animation-name: splashscale;
+    animation-timing-function: cubic-bezier();
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes splashscale {
+    0% {
+        transform: scale(1);
+    }
+    
+    100% {
+        transform: scale(1.03);
+    }
+    */
+}
+
+hr.border {
+    width: 85%;
+    border-top: 3px solid var(--subtext-color);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#eveythingelse {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    margin-top: 30px;
+    font-size: 2em;
+}
