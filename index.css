@@ -6,55 +6,90 @@
     --shadow-color: #1112137F;
     --text-color: #fff;
     --subtext-color: #979797;
+    --accent-color: #61c792;
+    --margin: 32px;
 }
 
 html {
     background-color: var(--background-color);
     font-family: var(--font-family);
+    margin: 32px;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 32px;
+    margin: 0px;
 }
 
+.profilePicture {
+    border-radius: var(--corner-radius);
+    filter: drop-shadow(0px 20px 10px var(--shadow-color));
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: var(--margin);
+    height: 128px;
+}
+
+.headerText {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.username {
+    font-size: 38px;
+    margin: 0px;
+}
+
+.splash {
+    font-size: 16px;
+    color: var(--accent-color);
+    margin: 0px;
+}
+
+.border  {
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.main {
+    height: auto;
+}
+
+.icon {
+    color: var(--accent-color);
+    width: 32px;
+    margin-right: 32px;
+}
+
+
+footer {
+    margin-bottom: var(--margin);
+}
+
+/*
+header {
+    display: flex;
+    
+    text-align: left;
+    margin: var(--margin);;
+    margin-top: 200px;
+}
+
+#headerText {
+    height: 128px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+    
 #pfp {
     border-radius: var(--corner-radius);
     filter: drop-shadow(0px 20px 10px var(--shadow-color));
-}
-
-#headertext {
-    margin-top: 10px;
-    margin: -50px;
-}
-
-#username {
-    font-size: 4em;
-    margin-bottom: -20px;
-}
-
-#splash {
-    color: var(--subtext-color);
-    text-align: center;
-    width: 90%;
-    height: 100%;
-    margin-left: 5%; /* setting width offsets it for some reason, so shift it back */
-    margin-top: 25px;
-    
-    /* enable this to mimic the minecraft main menu splash animation */
-    /*
-    color: yellow !important;
-    margin-left: 390px;
-    rotate: -23.5deg;
-    animation-duration: .25s;
-    animation-name: splashscale;
-    animation-timing-function: cubic-bezier();
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    
+    width: 128px;
+    height: 128px;
 }
 
 @keyframes splashscale {
@@ -65,14 +100,14 @@ header {
     100% {
         transform: scale(1.03);
     }
-    */
+    
 }
 
 hr.border {
-    width: 85%;
-    border-top: 3px solid var(--subtext-color);
+    
+    margin: var(--margin);;
+    border-top: 3px solid var(--accent-color);
     border-radius: 5px;
-    margin-top: 50px;
 }
 
 #eveythingelse {
@@ -80,6 +115,8 @@ hr.border {
     flex-direction: column;
     text-align: center;
     
-    margin-top: 30px;
+    margin-top: var(--margin);
     font-size: 2em;
 }
+*/
+
