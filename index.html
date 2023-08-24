@@ -3,55 +3,90 @@
 <meta name="darkreader-lock" content="">
 
 <html>
+    <div class="mica-blur-"></div>
+    
     <head>
         <link rel="stylesheet" type="text/css" href="index.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0/dist/iconify-icon.min.js"></script>
+        <script src="/splash.js"></script>
     </head>
     
-    <body>
+    <body onload="SetSplash()">
         <header>
-            <div class="content">
-                <img class="profilePicture" src="https://avatars.githubusercontent.com/helpimnotdrowning" alt="Profile picture" width="128">
-
-                <div class="headerText">
-                    <h1 class="username">pehoieitdrdrgyyd</h1>
-                    <h2 class="splash">.</h2>
-                </div>
+            <img class="profile-picture" src="https://avatars.githubusercontent.com/helpimnotdrowning" alt="Profile picture" width="128">
+            
+            <div class="header-text">
+                <h1 class="username">helpimnotdrowning</h1>
+                <h2 class="splash clickable" onclick="SetSplash()">missingno</h2>
             </div>
         </header>
         
-        <hr class="border">
+        <hr class="horizontal-border">
         
-        <div class="main">
+        <div class="content">
             <p>wow! i have a domain now!</p>
-            
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
+            <p>wow! i have a domain now!</p>
         </div>
         
-        <hr class="border">
+        <hr class="horizontal-border lesser-bottom-margin-for-icons">
         
         <footer>
-            <a rel="me" target="_blank" title="Mastodon via c.im server" href="https://c.im/@helpimnotdrowning">
-                <iconify-icon class="icon" icon="fa6-brands:mastodon" height="48" />
+            <a rel="me" target="_blank" title="Mastodon via c.im" href="https://c.im/@helpimnotdrowning">
+                <iconify-icon class="iconify-icon clickable" icon="fa6-brands:mastodon" height="48" />
             </a>
+            
+            <a rel="me" target="_blank" title="Lemmy via sdf.org" href="https://lemmy.sdf.org/u/helpimnotdrowning">
+                <iconify-icon class="iconify-icon clickable" icon="simple-icons:lemmy" height="48" />
+            </a>
+            <a rel="me" target="_blank" title="Reddit (reluctantly)" href="https://reddit.com/u/helpimnotdrowning">
+                <iconify-icon class="iconify-icon hidden-color hidden-clickable" icon="fa6-brands:reddit-alien" height="48" />
+            </a>
+            <a rel="me" target="_blank" title="Twitter (reluctantly)" href="https://twitter.com/@helpimnotdrowni">
+                <iconify-icon class="iconify-icon clickable" icon="fa6-brands:twitter" height="48" />
+            </a>
+            <a rel="me" target="_blank" title="Not-Martix" href="https://discordapp.com/users/406930661027348503">
+                <iconify-icon class="iconify-icon clickable" icon="fa6-brands:discord" height="48" />
+            </a>
+            
+            <hr class="vertical-border">
+            
             <a rel="me" target="_blank" title="Github" href="https://github.com/helpimnotdrowning">
-                <iconify-icon class="icon" icon="fa6-brands:github" height="48" />
-            </a>
-            <a rel="me" target="_blank" title="Reddit" href="https://reddit.com/user/helpimnotdrowning">
-                <iconify-icon class="icon" icon="fa6-brands:reddit-alien" height="48" />
+                <iconify-icon class="iconify-icon clickable" icon="fa6-brands:github" height="48" />
             </a>
             <a rel="me" target="_blank" title="Gitlab (rarely used!)" href="https://gitlab.com/helpimnotdrowning">
-                <iconify-icon class="icon" icon="fa6-brands:gitlab" height="48" />
+                <iconify-icon class="iconify-icon clickable" icon="fa6-brands:gitlab" height="48" />
             </a>
+            
+            <hr class="vertical-border">
+            
             <a rel="me" target="_blank" title="last.fm | streaming music??? legally???" href="https://www.last.fm/user/iamdrowning">
-                <iconify-icon class="icon" icon="fa6-brands:lastfm" height="48" />
+                <iconify-icon class="iconify-icon clickable" icon="fa6-brands:lastfm" height="48" />
             </a>
             <a rel="me" target="_blank" title="MusicBrainz" href="https://musicbrainz.org/user/iamdrowning">
-                <iconify-icon class="icon" icon="simple-icons:musicbrainz" height="48" />
+                <iconify-icon class="iconify-icon clickable" icon="simple-icons:musicbrainz" height="48" />
+            </a>
+            
+            <a rel="me" target="_blank" title="FIREFOX WRITE MORE HERE LOL" class="right-align">
+                <iconify-icon class="iconify-icon clickable" icon="fa6-brands:firefox-browser" height="48" />
             </a>
         </footer>
-    </div>
-        
-        <script src="/splash.js" defer></script>
     </body>
 </html>
